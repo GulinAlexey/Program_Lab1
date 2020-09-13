@@ -58,9 +58,29 @@ Date:   Mon Sep 14 01:42:17 2020 +0700
     Первый коммит
 
 Ввод команды на однострочный формат истории коммитов:
-$ git log --pretty=oneline
+git log --pretty=oneline
 Результат:
 e1774ece8cf3098d85e0296ddbed318951812c1e (HEAD -> master) Коммит 4, исправление неточностей в отчёте
 5396cd4e8685497281e0e4555400fab1bcf85cb3 Третий коммит (исправленный второй)
 86478b6e9d78e9bade9b43ae62d4d01ecd95eb7f Второй коммит
 b1416108768019952308489d4c24b1d7794e94e0 Первый коммит
+
+7. Перемещение файлов
+Команды для создания в директории файла, папки и дальнейшего перемещения:
+cd C:\MyProjects
+cd git-first
+nano text1.txt
+mkdir lib
+mv text1.txt lib
+
+Доп. команда для удаления из репозитория лишнего случайного файла, созданного в начале работы:
+git rm Гулин_А_Н_ЛР1.txt
+
+Результат:
+$ git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   lib/text1.txt
+        deleted:    "\320\223\321\203\320\273\320\270\320\275_\320\220_\320\235_\320\233\320\2401.txt"
+
