@@ -120,3 +120,6 @@ git revert HEAD
 git tag v2
 Для возвращения к старой метке:
 git checkout v1
+
+12. Создание ветки
+git checkout -b vetka1
